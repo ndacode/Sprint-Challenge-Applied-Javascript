@@ -31,7 +31,6 @@ header.appendChild(date);
 header.appendChild(title);
 header.appendChild(temp);
 
-
 return header
 
 }
