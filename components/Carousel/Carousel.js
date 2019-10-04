@@ -18,6 +18,7 @@
   </div>
 */
 
+
 const carouselContainer = document.querySelector('.carousel-container');
 console.log(carouselContainer);
 function Carousel() {
@@ -56,5 +57,13 @@ return carousel
 
 }
 
-
 carouselContainer.appendChild(Carousel());
+
+carousel.addEventListener("click", (event) => {
+  console.log("Clicked");
+  ltBtn.classList.toggle("left-button")
+  rtBtn.classList.toggle("right-button")
+})
+
+
+

@@ -29,15 +29,22 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the DOM?
-
+    The DOM is the Document Object Model. It's the browser's reprepsentation of the original version of a digital document, displayed on a user's screen.
+    "The Document Object Model is an object representation of the html elements of a webpage. It gives us an interface that with which we can interact with and manipulate the page, changing document structure, content, and styling. The object model is a tree structure with each DOM element therefore being a tree node, containing all the same property keys as each other node. Some of these node properties are informational while others are methods that we can use for interaction. The DOM , creating and propagating event objects, which hold information about the event type and target, up the tree.
 2. What is an event?
 
+    An event is any interaction or change that occurs on the DOM as a result of the user's or browser's interactions. 
+    "Every interaction a user has with a site is known as an event, a click, moving the mouse, scrolling the page, pressing a key on the keyboard, these are all events on the page and the browser can detect all of them. There are tons of different events the browser tracks. When an event happens on a page it is known as a trigger."
 3. What is an event listener?
-
+    An event listener registers event occurences and can be used to trigger functuntality in the DOM. 
+    "There are dozens of events an element can listen for. And when one of those events happens on that element, we can do something about it. This is called an event listener. We put an event listener on an element and give it a callback. When that event is triggered on the element, the callback is run."
 4. Why would we convert a NodeList into an Array?
+    NodeLists are array-like, but do not have as many built-in functionalities as arrays. You can traverse a nodelist but not necesarily use certain methods that are available in arrays.
 
+    "They both have numerical zero-based indices, and the length property but that is all they share with an Array. NodeList does take it one step further, and has access to .forEach. There is no .reduce or .map or any other array method."
 5. What is a component?
-
+A component is a reusable block of code. This allows for clenear code, easier scaling and faster updating in a web application. 
+"Components are the building block to modern application development. Being able to use HTML, CSS, and JS in a reusable way opens up new possibilities for web developers."
 ### Git Set up
 
 * [ ] Fork the project into your GitHub user account
