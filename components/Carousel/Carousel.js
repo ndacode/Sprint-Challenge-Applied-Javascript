@@ -17,3 +17,53 @@
     <div class="right-button"> > </div>
   </div>
 */
+
+
+const carouselContainer = document.querySelector('.carousel-container');
+console.log(carouselContainer);
+function Carousel() {
+ 
+carousel = document.createElement ('div');
+mountains = document.createElement('img');
+computer = document.createElement('img');
+trees = document.createElement('img');
+turntable = document.createElement('img');
+rtBtn = document.createElement('div');
+ltBtn = document.createElement('div');
+
+carousel.classList.add('carousel');
+rtBtn.classList.add('right-button');
+ltBtn.classList.add('left-button');
+
+carousel.textContent = ("I'm the carousel"),
+mountains.src = './assets/carousel/mountains.jpeg';
+computer.src ="./assets/carousel/computer.jpeg";
+trees.src ="./assets/carousel/trees.jpeg";
+turntable.src ="./assets/carousel/turntable.jpeg";
+rtBtn.textContent = "Next";
+ltBtn.textContent = "Back";
+
+console.log(mountains.src);
+
+carouselContainer.appendChild(carousel);
+carousel.appendChild(ltBtn);
+carousel.appendChild(rtBtn);
+carousel.appendChild(mountains);
+carousel.appendChild(computer);
+carousel.appendChild(trees);
+carousel.appendChild(turntable);
+
+return carousel
+
+}
+
+carouselContainer.appendChild(Carousel());
+
+carousel.addEventListener("click", (event) => {
+  console.log("Clicked");
+  ltBtn.classList.toggle("left-button")
+  rtBtn.classList.toggle("right-button")
+})
+
+
+
